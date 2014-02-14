@@ -7,7 +7,7 @@ $debugMode = false;
 $TimeBackPull = "-2 years";
 
 /* RETS Variables */
-require("PHRets/PHRets_CREA.php");
+require("PHRets_CREA.php");
 $RETS = new PHRets();
 $RETSURL = "http://data.crea.ca/Login.svc/Login";
 $RETSUsername = "";

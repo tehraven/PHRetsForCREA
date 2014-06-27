@@ -569,7 +569,7 @@ class phRETS {
 						: null;
 			if($search_arguments['Count'] != 0)
 			{
-				$propFound = false;
+				$dataDelim = $dataColumns = null;
 				foreach($xml->children() as $k => $v)
 				{
 					if($k === "RETS-RESPONSE")
@@ -581,7 +581,7 @@ class phRETS {
 					elseif($k === "COUNT")
 					{}
 					else
-						error_log("Child - ".$k);
+						//error_log("Child - ".$k);
 				}
 			}
 			$this->FreeResult($this->int_result_pointer);
